@@ -23,7 +23,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 <!-- 상단 시작 { -->
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand col-sm-3" href="#">
             <img src="<? echo G5_THEME_IMG_URL ?>/logo.svg" alt="" style="width:180px">
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -31,9 +31,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-
-            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+        <div class="collapse navbar-collapse col-sm-5" id="collapsibleNavId">
+            <ul class="navbar-nav mt-2 mt-lg-0">
 
                 <?php
 				$menu_datas = get_menu_db(0, true);
@@ -52,6 +51,11 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
             </ul>
         </div>
+        
+        <div class="login d-flex align-items-center gap-2">
+            <img src="<? echo G5_THEME_IMG_URL ?>/menu_nonMember.png" alt="" style="width:56px">
+            <a href="#">로그인하기</a>
+        </div>
   </div>
 </nav>
 
@@ -63,3 +67,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- 콘텐츠 시작 { -->
 <div class="container-wr">
+
+<div class="videoWrap">
+    <video src="https://ybmlemon.com/img/web/HOME/main/ybmlemon.mp4" autoplay muted></video>
+</div>
