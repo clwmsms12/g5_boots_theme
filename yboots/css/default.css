@@ -45,6 +45,7 @@ border:1px solid #558ab7 !important;
 .placeholdersjs {color:#aaa !important}
 
 
+h2.stitle{font-size: 32px;}
 
 /* 팝업레이어 */
 #hd_pop {z-index:1000;position:relative;margin:0 auto;height:0}
@@ -73,6 +74,21 @@ border:1px solid #558ab7 !important;
   align-items: center;
 }
 video{width: 100%;}
+
+.subView{
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;justify-content: center;align-items: center;
+}
+.subView.subTopBg_01{background-image: url(../img/images01.jpg);}
+.subView.subTopBg_02{background-image: url(../img/images02.jpg);}
+.subView.subTopBg_03{background-image: url(../img/images03.jpg);}
+.subView.subTopBg_04{background-image: url(../img/images04.jpg);}
+.subView.subTopBg_05{background-image: url(../img/images05.jpg);}
+.stitle{}
+.locTitle{margin-top: -20px;}
 /* 게시물 선택복사 선택이동 */
 #copymove {}
 #copymove .win_desc {text-align:center;display:block}
