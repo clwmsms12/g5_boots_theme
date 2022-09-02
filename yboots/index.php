@@ -111,32 +111,61 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <script>
     $('.slickslide1').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  nextArrow:$('.next'),
-  prevArrow:$('.prev'),
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    nextArrow:$('.next'),
+    prevArrow:$('.prev'),
+    responsive: [
+        {
+        breakpoint: 768,
+        settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+        }
+        }
+    ]
+    });
+
+
+    $('.slickslide1').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    nextArrow:$('.next'),
+    prevArrow:$('.prev'),
+    responsive: [
+        {
+        breakpoint: 768,
+        settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+        }
+        }
+    ]
+    });
 </script>
 
 <div class="container py-5">
