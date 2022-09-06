@@ -27,7 +27,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <style>
     .visualT{font-size:40px;font-weight: bold;line-height: 60px;}
-    .visualpT{font-size:20px;}
+    .visualpT{font-size:20px;z-index: 800px;}
     .visualMove{left: 80%;width: 35%;top: 50%;transform: translate(-80%,-50%);}
     .visualBG{
         background-image: url(https://ybmlemon.com/img/web/HOME/main/main_visual_bg02.png);
@@ -41,6 +41,7 @@ include_once(G5_THEME_PATH.'/head.php');
     .item02{right: 0;bottom: 0;}
     .item03{width: 180px;left: 0;bottom: 0;}
 
+    .onlineIP{position: absolute;bottom: -120px;}
 
 
     .cont{background: skyblue;}
@@ -221,7 +222,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <div class="container rounded-5" style="background:#cef5f5;">
     <div class="py-5" style="background:url(https://ybmlemon.com/img/web/HOME/main/main_visual_bg02.png);height:500px;">
-        <div class="row bg-info">
+        <div class="row position-relative">
             <div class="col-md-5 d-flex justify-content-center align-items-center">
                 <div class="teacher">
                     <h2 class="visualT mb-4">외국인 선생님 +<br>
@@ -230,9 +231,46 @@ include_once(G5_THEME_PATH.'/head.php');
                     <span class="text-green">옆에 함께</span>합니다. 더 이상 영어가 두렵지 않습니다.
                     </p>
                 </div>
+                <img src="<? echo G5_THEME_IMG_URL ?>/main_visual_char.png" alt="" class="onlineIP">
             </div>
-            <div class="col-md-7 d-flex bg-info justify-content-center align-items-center">
+            <div class="col-md-7 d-flex justify-content-center align-items-center">
                 <img src="<? echo G5_THEME_IMG_URL ?>/main_visual_04.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="<? echo G5_THEME_IMG_URL ?>/main_visual_05.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h2 class="visualT mb-4 ms-5">
+                Main Class 자신감 <span class="text-green">UP</span><br>
+                예습도 <span><img src="<? echo G5_THEME_IMG_URL ?>/online.png" alt="" class="img-fluid"></span> 복습도 <span><img src="<? echo G5_THEME_IMG_URL ?>/online.png" alt="" class="img-fluid"></span><br>
+                특별한 학습시스템
+            </h2>
+            <p class="visualpT ms-5">
+                본 수업 전/후 예복습 시스템과 숙제로 효과적인 확인학습을<br>
+                진햅합니다. 혼자서도 척척! 자기주도 학습이 가능합니다.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="visualT mb-4">YBM 레몬만의 밀착 학습관리</h2>
+            <p class="visualpT mb-5">체계적인 관리를 통해 우리 아이의 학습효과를 극대화 합니다.</p>
+            <img src="<? echo G5_THEME_IMG_URL ?>/graph.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-3 bg-info rounded-4 d-flex justify-content-evenly align-items-center py-4">
+            <img src="<? echo G5_THEME_IMG_URL ?>/main_icon_report.png" alt="">
+            <div class="text">
+                <h2>학습 결과 보고서</h2>
+                <p>Daily Class Report</p>
             </div>
         </div>
     </div>
