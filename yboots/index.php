@@ -43,6 +43,35 @@ include_once(G5_THEME_PATH.'/head.php');
 
     .onlineIP{position: absolute;bottom: -120px;}
 
+    .conitem{
+        border-radius:20px;
+        width: 100%; gap:10px;
+        display: flex;align-items:center;justify-content:space-evenly;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 25px 0px;z-index: 100;
+    }
+    .conitem:hover{background-color: #008062;}
+    .content:hover .conText{
+        opacity: 1;
+        top:80px;
+        transition: 0.3s;
+    }
+    .conText{
+        width: 306px;
+        padding: 25px 25px;
+        border-radius:20px;
+        background-color: #00a371;
+        top: 10px;opacity: 0;
+    }
+    .icon{
+        width: 32px;height: 32px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    .conitem:hover .icon{background-position: 0 -32px;}
+    .conT{font-size:20px;font-weight:bold;}
+    .conpT{font-size:15px;font-weight:400;color:#333}
+
 
     .cont{background: skyblue;}
 </style>
@@ -264,13 +293,18 @@ include_once(G5_THEME_PATH.'/head.php');
         <div class="col-12 d-flex flex-column justify-content-center align-items-center">
             <h2 class="visualT mb-4">YBM 레몬만의 밀착 학습관리</h2>
             <p class="visualpT mb-5">체계적인 관리를 통해 우리 아이의 학습효과를 극대화 합니다.</p>
-            <img src="<? echo G5_THEME_IMG_URL ?>/graph.png" alt="" class="img-fluid">
+            <img src="<? echo G5_THEME_IMG_URL ?>/graph.png" alt="" class="img-fluid mb-5">
         </div>
-        <div class="col-md-3 bg-info rounded-4 d-flex justify-content-evenly align-items-center py-4">
-            <img src="<? echo G5_THEME_IMG_URL ?>/main_icon_report.png" alt="">
-            <div class="text">
-                <h2>학습 결과 보고서</h2>
-                <p>Daily Class Report</p>
+        <div class="col-md-3 content position-relative">
+            <div class="conitem">
+                <div class="icon report"></div>
+                <div class="text">
+                    <h2 class="conT mb-1">학습 결과 보고서</h2>
+                    <p class="conpT">Daily Class Report</p>
+                </div>
+            </div>
+            <div class="conText position-absolute">
+                <p class="conpT text-white">학습자의 학업 점수와 학슴내용을 요약한 보고서를 발송합니다.</p>
             </div>
         </div>
     </div>
