@@ -89,6 +89,9 @@ video{width: 100%;}
 .subView.subTopBg_05{background-image: url(../img/images05.jpg);}
 .stitle{}
 .locTitle{margin-top: -20px;}
+
+.report{background-image: url(../img/main_icon_report.png);}
+.content:hover{}
 /* 게시물 선택복사 선택이동 */
 #copymove {}
 #copymove .win_desc {text-align:center;display:block}
