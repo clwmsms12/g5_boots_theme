@@ -48,13 +48,14 @@ include_once(G5_THEME_PATH.'/head.php');
         width: 100%; gap:10px;
         display: flex;align-items:center;justify-content:space-evenly;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 25px 0px;z-index: 100;
+        padding: 25px 0px;z-index: 20;position: relative;
     }
-    .conitem:hover{background-color: #008062;}
-    .content:hover .conText{
+    .contenter:hover .conitem{background-color: #008062;}
+    .contenter{position: relative;}
+    .contenter:hover .conText{
         opacity: 1;
         top:80px;
-        transition: 0.3s;
+        transition: 0.3s;z-index: 15;
     }
     .conText{
         width: 306px;
@@ -62,13 +63,14 @@ include_once(G5_THEME_PATH.'/head.php');
         border-radius:20px;
         background-color: #00a371;
         top: 10px;opacity: 0;
+        position: absolute;
     }
     .icon{
         width: 32px;height: 32px;
         background-repeat: no-repeat;
         background-position: 0 0;
     }
-    .conitem:hover .icon{background-position: 0 -32px;}
+    .contenter:hover .icon{background-position: 0 -32px;}
     .conT{font-size:20px;font-weight:bold;}
     .conpT{font-size:15px;font-weight:400;color:#333}
 
@@ -289,24 +291,126 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 
 <div class="container py-5">
-    <div class="row">
+    <div class="row mb-4">
         <div class="col-12 d-flex flex-column justify-content-center align-items-center">
             <h2 class="visualT mb-4">YBM 레몬만의 밀착 학습관리</h2>
             <p class="visualpT mb-5">체계적인 관리를 통해 우리 아이의 학습효과를 극대화 합니다.</p>
             <img src="<? echo G5_THEME_IMG_URL ?>/graph.png" alt="" class="img-fluid mb-5">
         </div>
-        <div class="col-md-3 content position-relative">
-            <div class="conitem">
-                <div class="icon report"></div>
-                <div class="text">
-                    <h2 class="conT mb-1">학습 결과 보고서</h2>
-                    <p class="conpT">Daily Class Report</p>
+        <div class="col-md-3">
+            <div class="contenter">
+                <div class="conitem">
+                    <div class="icon report"></div>
+                    <div class="text">
+                        <h2 class="conT mb-1">학습 결과 보고서</h2>
+                        <p class="conpT">Daily Class Report</p>
+                    </div>
+                </div>
+                <div class="conText">
+                    <p class="conpT text-white">학습자의 학업 점수와 학슴내용을 요약한 보고서를 발송합니다.</p>
                 </div>
             </div>
-            <div class="conText position-absolute">
-                <p class="conpT text-white">학습자의 학업 점수와 학슴내용을 요약한 보고서를 발송합니다.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="contenter">
+                <div class="conitem">
+                    <div class="icon test"></div>
+                    <div class="text">
+                        <h2 class="conT mb-1">성취도 테스트</h2>
+                        <p class="conpT">Achievement Test</p>
+                    </div>
+                </div>
+                <div class="conText">
+                    <p class="conpT text-white">3개월에 한번씩 학습자의 성취도를 평가하여 피드백을 제공합니다.</p>
+                </div>
             </div>
         </div>
+        <div class="col-md-3">
+            <div class="contenter">
+                <div class="conitem">
+                    <div class="icon solution"></div>
+                    <div class="text">
+                        <h2 class="conT mb-1">화상솔루션</h2>
+                        <p class="conpT">Online Learning Solutions</p>
+                    </div>
+                </div>
+                <div class="conText">
+                    <p class="conpT text-white">YBM에서 직접 개발한 화상솔루션과 교안으로 수업을 진행합니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="contenter">
+                <div class="conitem">
+                    <div class="icon homework"></div>
+                    <div class="text">
+                        <h2 class="conT mb-1">온 오프라인 숙제관리</h2>
+                        <p class="conpT">Homework</p>
+                    </div>
+                </div>
+                <div class="conText">
+                    <p class="conpT text-white">수업 후 온라인 오프라인 숙제를 진행하여 학습 효과를 높입니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+                <div class="contenter">
+                    <div class="conitem">
+                        <div class="icon report"></div>
+                        <div class="text">
+                            <h2 class="conT mb-1">학습 결과 보고서</h2>
+                            <p class="conpT">Daily Class Report</p>
+                        </div>
+                    </div>
+                    <div class="conText">
+                        <p class="conpT text-white">학습자의 학업 점수와 학슴내용을 요약한 보고서를 발송합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="contenter">
+                    <div class="conitem">
+                        <div class="icon test"></div>
+                        <div class="text">
+                            <h2 class="conT mb-1">성취도 테스트</h2>
+                            <p class="conpT">Achievement Test</p>
+                        </div>
+                    </div>
+                    <div class="conText">
+                        <p class="conpT text-white">3개월에 한번씩 학습자의 성취도를 평가하여 피드백을 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="contenter">
+                    <div class="conitem">
+                        <div class="icon solution"></div>
+                        <div class="text">
+                            <h2 class="conT mb-1">화상솔루션</h2>
+                            <p class="conpT">Online Learning Solutions</p>
+                        </div>
+                    </div>
+                    <div class="conText">
+                        <p class="conpT text-white">YBM에서 직접 개발한 화상솔루션과 교안으로 수업을 진행합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="contenter">
+                    <div class="conitem">
+                        <div class="icon homework"></div>
+                        <div class="text">
+                            <h2 class="conT mb-1">온 오프라인 숙제관리</h2>
+                            <p class="conpT">Homework</p>
+                        </div>
+                    </div>
+                    <div class="conText">
+                        <p class="conpT text-white">수업 후 온라인 오프라인 숙제를 진행하여 학습 효과를 높입니다.</p>
+                    </div>
+                </div>
+            </div>
     </div>
 </div>
 <?php

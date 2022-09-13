@@ -91,7 +91,9 @@ video{width: 100%;}
 .locTitle{margin-top: -20px;}
 
 .report{background-image: url(../img/main_icon_report.png);}
-.content:hover{}
+.test{background-image: url(../img/main_icon_test.png);}
+.solution{background-image: url(../img/main_icon_solution.png);}
+.homework{background-image: url(../img/main_icon_homework.png);}
 /* 게시물 선택복사 선택이동 */
 #copymove {}
 #copymove .win_desc {text-align:center;display:block}
