@@ -94,6 +94,11 @@ video{width: 100%;}
 .test{background-image: url(../img/main_icon_test.png);}
 .solution{background-image: url(../img/main_icon_solution.png);}
 .homework{background-image: url(../img/main_icon_homework.png);}
+
+.hugi{background: #e4faf6;}
+.cardImg{width: 100%;}
+.card-body{width: 100%;background: white;padding: 0 25px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;}
+.card-body>.conT{border-bottom: 1px solid #000;width: 100%;}
 /* 게시물 선택복사 선택이동 */
 #copymove {}
 #copymove .win_desc {text-align:center;display:block}

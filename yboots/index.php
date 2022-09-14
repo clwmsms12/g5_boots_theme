@@ -99,8 +99,6 @@ include_once(G5_THEME_PATH.'/head.php');
     </div>
 </div>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <style>
     .prev,.next{cursor: pointer;}
@@ -112,93 +110,6 @@ include_once(G5_THEME_PATH.'/head.php');
     }
     .slickslide1 .sItem.slick-center{opacity: 1;transform:scale(1)}
 </style>
-
-<div class="container position-relative">
-    <img src="<? echo G5_THEME_IMG_URL ?>/LL.png" alt="" class="prev d-none d-md-block">
-    <div class="slickslide1">
-        <div class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img1.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img2.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img3.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img4.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img5.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img6.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="sItem">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img7.jpg" alt="" class="img-fluid">
-        </div>
-    </div>
-    <img src="<? echo G5_THEME_IMG_URL ?>/RR.png" alt="" class="next d-none d-md-block">
-</div>
-
-<script>
-    $('.slickslide1').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    nextArrow:$('.next'),
-    prevArrow:$('.prev'),
-    responsive: [
-        {
-        breakpoint: 768,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-        }
-        },
-        {
-        breakpoint: 480,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-        }
-        }
-    ]
-    });
-
-
-    $('.slickslide1').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    nextArrow:$('.next'),
-    prevArrow:$('.prev'),
-    responsive: [
-        {
-        breakpoint: 768,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-        }
-        },
-        {
-        breakpoint: 480,
-        settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-        }
-        }
-    ]
-    });
-</script>
 
 <div class="container py-5">
     <div class="row">
@@ -413,5 +324,124 @@ include_once(G5_THEME_PATH.'/head.php');
             </div>
     </div>
 </div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<div class="container position-relative py-5">
+<h2 class="visualT mb-2 text-center">갤러리</h2>
+    <img src="<? echo G5_THEME_IMG_URL ?>/slide_arrow_left.png" alt="" class="prev d-none d-md-block">
+    <div class="slickslide1">
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/kanu2_L2S13.png" alt="" class="img-fluid mb-5">
+            <h2 class="conT mb-4">Project | Speakink<br>Level 2 Day-13</h2>
+            <p class="conpT">2022.07.28</p>
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/lemon1_L4S13_1.png" alt="" class="img-fluid mb-5">
+            <h2 class="conT mb-4">Project | Speakink<br>Level 4 Day-13</h2>
+            <p class="conpT">2022.07.07</p>
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/mole2_L3S26.png" alt="" class="img-fluid mb-5">
+            <h2 class="conT mb-4">Project || Speakink<br>Level 3 Day-26</h2>
+            <p class="conpT">2022.07.13</p>
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/std1_L3S39.png" alt="" class="img-fluid mb-5">
+            <h2 class="conT mb-4">Project ||| Speakink<br>Level 3 Day-39</h2>
+            <p class="conpT">2022.04.21</p>
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/lemon1_L4S44_1.png" alt="" class="img-fluid mb-5">
+            <h2 class="conT mb-4">Project V| Speakink<br>Level 4 Day-44</h2>
+            <p class="conpT">2022.05.20</p>
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/lemon02_L1S48.png" alt="" class="img-fluid mb-5">
+            <h2 class="conT mb-4">Project V| Speakink<br>Level 1 Day-48</h2>
+            <p class="conpT">2022.05.24</p>
+        </div>
+        <div class="sItem">
+            <img src="<? echo G5_THEME_IMG_URL ?>/tora0708a_L3S13.png" alt="" class="img-fluid mb-5">
+            <h2 class="conT mb-4">Project | Speakink<br>Level 3 Day-13</h2>
+            <p class="conpT">2022.05.27</p>
+        </div>
+    </div>
+    <img src="<? echo G5_THEME_IMG_URL ?>/slide_arrow_right.png" alt="" class="next d-none d-md-block">
+</div>
+
+<div class="hugi py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 carder">
+                <img class="img-fluid cardImg" src="<? echo G5_THEME_IMG_URL ?>/main_review01.png" alt="">
+                <div class="card-body">
+                    <h2 class="conT text-center py-3">저희 아이에게 딱 맞는 수업 <span><img src="<? echo G5_THEME_IMG_URL ?>/main_review_icon01.png" alt=""></span></h2>
+                    <p class="conpT py-4">아이 친구네와 함께 체험 수업을 신청했는데,너무 재미있어 합니다. 수업이 끝난 후 또 하고 싶다고 해서 정규 수업 등록을 고민하고 있어요~~ 선생님께서 아이의 수준에 맞춰 수업을 진행해주시고 재미있게 이끌어 주셔서 저희 아이에게 아주 딱 맞는 수업이었습니다^^</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.slickslide1').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    nextArrow:$('.next'),
+    prevArrow:$('.prev'),
+    responsive: [
+        {
+        breakpoint: 768,
+        settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+        }
+        }
+    ]
+    });
+
+
+    $('.slickslide1').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    nextArrow:$('.next'),
+    prevArrow:$('.prev'),
+    responsive: [
+        {
+        breakpoint: 768,
+        settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+        }
+        }
+    ]
+    });
+</script>
 <?php
 include_once(G5_THEME_PATH.'/tail.php');
