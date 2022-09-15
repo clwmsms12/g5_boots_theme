@@ -373,12 +373,27 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <div class="hugi py-5">
     <div class="container">
+    <h2 class="visualT mb-5 text-center">체험 수업 후기</h2>
         <div class="row">
             <div class="col-md-4 carder">
                 <img class="img-fluid cardImg" src="<? echo G5_THEME_IMG_URL ?>/main_review01.png" alt="">
                 <div class="card-body">
                     <h2 class="conT text-center py-3">저희 아이에게 딱 맞는 수업 <span><img src="<? echo G5_THEME_IMG_URL ?>/main_review_icon01.png" alt=""></span></h2>
                     <p class="conpT py-4">아이 친구네와 함께 체험 수업을 신청했는데,너무 재미있어 합니다. 수업이 끝난 후 또 하고 싶다고 해서 정규 수업 등록을 고민하고 있어요~~ 선생님께서 아이의 수준에 맞춰 수업을 진행해주시고 재미있게 이끌어 주셔서 저희 아이에게 아주 딱 맞는 수업이었습니다^^</p>
+                </div>
+            </div>
+            <div class="col-md-4 carder">
+                <img class="img-fluid cardImg" src="<? echo G5_THEME_IMG_URL ?>/main_review02.png" alt="">
+                <div class="card-body">
+                    <h2 class="conT text-center py-3">레몬 추천합니다!!! :) <span><img src="<? echo G5_THEME_IMG_URL ?>/main_review_icon02.png" alt=""></span></h2>
+                    <p class="conpT py-4">저희 아이는 온라인 수업을 자주 듣곤 하는데, 생각했 던 일반 화상 수업과 달리 기능이 너무 다양하고 정교 해서 정말 놀랐어요~!! 수업 내용도 흥미로웠고, 강사 분들의 실력도 믿음직스러웠습니다. 만족해요~~ 레몬 추천합니다!!! :)</p>
+                </div>
+            </div>
+            <div class="col-md-4 carder">
+                <img class="img-fluid cardImg" src="<? echo G5_THEME_IMG_URL ?>/main_review03.png" alt="">
+                <div class="card-body">
+                    <h2 class="conT text-center py-3">영어가 좋아졌대요.</h2>
+                    <p class="conpT py-4">영어 수업도 처음이고 온라인 수업도 처음인 저희 아이가 체험 수업을 듣고 영어가 좋아졌대요. 선생님들도 좋고, 수업 내내 너무 재밌었다고 합니다~ 걱정 했는데 아이가 이렇게 좋아할 줄은 몰랐습니다. 레몬 감사해요^-^</p>
                 </div>
             </div>
         </div>
