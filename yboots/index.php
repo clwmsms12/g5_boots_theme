@@ -416,7 +416,7 @@ include_once(G5_THEME_PATH.'/head.php');
             centerPadding: '40px',
             slidesToShow: 1
         }
-        },
+        }
         {
         breakpoint: 480,
         settings: {
